@@ -1,0 +1,9 @@
+https://github.com/jbhavsar27/mlops-pytorch-azure-pipelines/blob/1300873c6c24244ff902673ca4d6c8130b3db0fd/prototyping/test-images/005.jpg
+https://github.com/jbhavsar27/mlops-pytorch-azure-pipelines/blob/1300873c6c24244ff902673ca4d6c8130b3db0fd/prototyping/test-images/007.jpg
+https://github.com/jbhavsar27/mlops-pytorch-azure-pipelines/blob/1300873c6c24244ff902673ca4d6c8130b3db0fd/prototyping/test-images/009.jpg
+https://github.com/jbhavsar27/mlops-pytorch-azure-pipelines/blob/1300873c6c24244ff902673ca4d6c8130b3db0fd/prototyping/test-images/012.jpg
+https://github.com/jbhavsar27/mlops-pytorch-azure-pipelines/blob/1300873c6c24244ff902673ca4d6c8130b3db0fd/prototyping/test-images/031.jpg
+https://github.com/jbhavsar27/mlops-pytorch-azure-pipelines/blob/1300873c6c24244ff902673ca4d6c8130b3db0fd/prototyping/test-images/032.jpg
+https://github.com/jbhavsar27/mlops-pytorch-azure-pipelines/blob/1300873c6c24244ff902673ca4d6c8130b3db0fd/prototyping/test-images/033.jpg
+https://github.com/jbhavsar27/mlops-pytorch-azure-pipelines/blob/1300873c6c24244ff902673ca4d6c8130b3db0fd/prototyping/test-images/040.jpg
+https://github.com/jbhavsar27/mlops-pytorch-azure-pipelines/blob/1300873c6c24244ff902673ca4d6c8130b3db0fd/prototyping/test-images/041.jpg
