@@ -1,0 +1,25 @@
+$schema: https://azuremlschemas.azureedge.net/latest/commandComponent.schema.json
+type: command
+
+name: pytorch_register_model
+display_name: Register pyTorch model after run
+version: 1.1
+
+inputs:
+  model_assets_path:
+    type: path
+  model_name:
+    type: string
+    default: "marvel-classification"
+  model_file_name:
+    type: string
+    default: "model.pth"
+  label_file_name:
+    type: string
+    default: "labels.txt" 
+
+code: ./src
+
+environment: azureml:transferlearning-pytorch:1
+
+command: python register.py --model_assets_path ${{inputs.model_assets_path}} --model_name ${{inputs.model_name}} --model_file_name ${{inputs.model_file_name}} --label_file_name ${{inputs.label_file_name}}
