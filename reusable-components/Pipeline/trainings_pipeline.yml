@@ -1,0 +1,34 @@
+$schema: https://azuremlschemas.azureedge.net/latest/pipelineJob.schema.json
+type: pipeline
+experiment_name: pyTorch-Pipeline
+description: Pipeline to create a Lego Classifier in PyTorch
+display_name: Pipeline - Test
+
+settings:
+  default_datastore: azureml:workspaceartifactstore
+  default_compute: azureml:testPytorch
+
+inputs:
+  training_data:
+    mode: ro_mount
+    path: azureml:LegoCharsV2:1
+
+jobs:
+  train_model:
+    type: command
+    component: azureml:pytorch_train_model:1.2
+    inputs:
+      training_data: ${{parent.inputs.training_data}}
+      epochs: 8
+      tag: "Train-1"
+    outputs:
+      train_output: 
+        mode: upload
+      
+  register_pytorch:
+    type: command
+    component: azureml:pytorch_register_model:1.1
+    inputs:
+      model_assets_path: ${{parent.jobs.train_model.outputs.train_output}}
+      model_name: "lego-pytorch-classification"
+      model_file_name: "model.pth"
